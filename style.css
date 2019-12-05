@@ -155,6 +155,25 @@ i {
   top: 467px;
 }
 
+#final {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  color: #555;
+  background: none;
+  border: 2px solid lightgrey;
+  font-family: Lato;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+}
+
 .dice {
   position: absolute;
   left: 50%;

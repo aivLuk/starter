@@ -2,6 +2,7 @@
 GAME RULES:
 
 Challenge 1 - if a player rolls 6 2x in a row, his total score goes to 0 and it's next players turn;
+Challenge 2 - add an input field where players can choose the number to win;
 
 */
 
