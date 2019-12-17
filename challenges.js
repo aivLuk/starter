@@ -7,22 +7,22 @@ Challenge 3 - add another dice. Player looses current score if any of the dices 
 
 */
 
-var scores, roundScore, activePlayer;
-var gamePlaying = true;
-var lastDice;
+let scores, roundScore, activePlayer;
+let gamePlaying = true;
+let lastDice;
 init();
 
 document.querySelector(".btn-roll").addEventListener("click", function () {
     if (gamePlaying) {
         // 1. Random dice number
-        var dice = Math.floor(Math.random() * 6) + 1;
-        var dice1 = Math.floor(Math.random() * 6) + 1;
+        let dice = Math.floor(Math.random() * 6) + 1;
+        let dice1 = Math.floor(Math.random() * 6) + 1;
 
         // 2. Display the result
-        var diceDOM = document.querySelector(".dice");
+        const diceDOM = document.querySelector(".dice");
         diceDOM.style.display = "block";
         diceDOM.src = "dice-" + dice + ".png";
-        var diceDOM1 = document.querySelector(".dice1");
+        const diceDOM1 = document.querySelector(".dice1");
         diceDOM1.style.display = "block";
         diceDOM1.src = "dice-" + dice1 + ".png";
 
@@ -43,7 +43,7 @@ document.querySelector(".btn-roll").addEventListener("click", function () {
 });
 
 document.querySelector(".btn-hold").addEventListener("click", function () {
-    var finalScore = parseInt(document.getElementById("final").value);
+    const finalScore = parseInt(document.getElementById("final").value);
     if (gamePlaying) {
         // Add CURRENT score to a GLOBAL score
         scores[activePlayer] += roundScore;
